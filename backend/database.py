@@ -2,7 +2,8 @@ import mysql.connector
 DB_CONFIG = {
     'host': '127.0.0.1',
     'user': 'root',
-    'password': 'project@123',
+    'password': '12345',
+     'port' : '3307',
     'database': 'grocery'
 }
 
