@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Game User Details</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <!-- wrong work on table structure -->
+    <div class="container">
+        <h1>Enter Game User Details</h1>
+        <form id="gameUserForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="user_game">User Game:</label>
+            <input type="text" id="user_game" name="user_game" required>
+
+            <label for="game_money">Game Money:</label>
+            <input type="number" id="game_money" name="game_money" min="0" step="0.01" required>
+
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
