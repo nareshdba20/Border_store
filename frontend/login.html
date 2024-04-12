@@ -11,16 +11,15 @@
    <video autoplay loop muted plays-inline>
     <source src="IMG_1811.mp4" type="video/mp4">
    </video>
-
-
 </div>
+
 <div class="login-container">
-  <h2>Login</h2>
-    <form id="loginform" onsubmit="return validatelogin()">
-      <label for="username">username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">password:</label>
-        <input type="password" id="password" name="password" required>
+  <h1>Login</h1>
+    <form id="loginform">
+      <h2><label for="username">Username:</label></h2>
+        <input type="text" id="username" placeholder="Enter your username" name="username" required>
+      <h2><label for="password">Password:</label></h2>
+        <input type="password" id="password" placeholder="Enter your password" name="password" required >
       <button type="submit">Login</button>
     </form>
 </div>

@@ -1,11 +1,10 @@
 function signup() {
-  window.open("http://127.0.0.1:5500/grocery_store_project/frontend/Register.html", "_blank");
+  window.open("http://127.0.0.1:5500/Grocery_store_pjt/grocery_store_project/frontend/Register.html", "_blank");
 }
 
 document.getElementById('Register').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
+  event.preventDefault(); 
 
-  // Get the user details
   var username = document.getElementById('username').value;
   var gmail = document.getElementById('email').value;
   var password = document.getElementById('password').value;
@@ -26,9 +25,9 @@ document.getElementById('Register').addEventListener('submit', function(event) {
   .then(response => {
     if (response.ok) {
       // Registration successful
-      alert('Registration successful!');
+      // alert('Registration successful!');
       // Optionally, redirect to another page
-      window.location.href = 'http://127.0.0.1:5500/grocery_store_project/frontend/Login.html';
+      // window.location.href = 'http://127.0.0.1:5500/Grocery_store_pjt/grocery_store_project/frontend/login.html';
     } else {
       // Registration failed
       alert('Registration failed. Please try again.');
