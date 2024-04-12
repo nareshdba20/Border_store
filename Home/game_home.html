@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Data Management</title>
+    <link rel="stylesheet" href="game_home.css">
+</head>
+
+
+
+
+<body>
+    <h1 class="header">G4</h1>
+    <h2>Game Data Management</h2>
+
+    <div id="formContainer">
+        <label for="username">User name:</label><input type="text" id="username" placeholder="Enter your name">
+        <label for="usergame">User Game:</label><input type="text" id="user_game" placeholder="Enter your Game name">
+        <label for="gamemoney">Game Money:</label><input type="number" id="game_money" placeholder="Enter your mobile details">
+        <label for="date_created">Date Created:</label><input type="date" id="date_created">
+
+        <button onclick="addData()">Add</button>
+    </div>
+
+    <table id="outputTable">
+        <tr>
+            <th>Game user</th>
+            <th>Game Name</th>
+            <th>Game Money</th>
+            <th>Date Created</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <script src="game_home.js"></script>
+</body>
+
+</html>
