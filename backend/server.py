@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from sql_connect import get_sql_connect
 from users import get_user_details,register
+from game import save_game_user,get_game_users
 from flask_cors import CORS
 # global declaration
 connection = get_sql_connect()
@@ -30,6 +31,15 @@ def register_user():
         #Register the user
     register(connection, username, email, password)
     return jsonify({"message": "User registered successfully!"}), 200
+
+# Define routes for game functionalities
+@app.route('/save_game_user', methods=['POST'])
+def save_game_user_route():
+    return save_game_user(connection, request.get_json())
+
+@app.route('/get_game_users', methods=['GET'])
+def get_game_users_route():
+    return get_game_users(connection)
 
 # Run the Flask application
 if __name__ == '__main__':

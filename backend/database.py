@@ -22,3 +22,4 @@ def authenticate_user(username, password):
     except Exception as e:
         print("Error:", e)
         return False
+
